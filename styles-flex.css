@@ -21,7 +21,7 @@ body{
   flex-basis:960px;
   flex-direction: column;
   margin: 0 auto;
-  gap:5px 5px;
+  gap: 5px;
 
   background-color: #ffffff;
 }
@@ -41,6 +41,7 @@ body{
   width: 155px;
   height: 38px;
   background-color: #E7E0FF;
+
   border:1px solid #EF33FF;
   border-radius: 4px;
 }
@@ -54,8 +55,6 @@ body{
   background-color: #DBE2FC;
   border:1px solid #754DE5;
   border-radius: 4px;
-
-  
 }
 
 .header-main-unit{
@@ -76,122 +75,74 @@ body{
   margin-right: 21px;
 }
 
-/* ---------------------------------------------- */
+/*---------- Блок main-page и его крупные блоки ----------*/
 
 .main-page{
-  width:960px;
   background-color: #E6F3FF;
   border:1px solid #0183FF;
   border-radius: 4px;
-  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  row-gap: 5px;
+
+  padding: 9px 31px;
+}
+
+.content{
+  display: flex;
+  background-color: #DBE2FC;
+  border:1px solid #754DE5;
+  border-radius: 4px;
+  flex-basis: 120px;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .content-one{
-  width: 896px;
-  height: 120px;
-  background-color: #DBE2FC;
-  border:1px solid #754DE5;
-  border-radius: 4px;
-  margin: 0 auto;
-  margin-top: 8px;
+
 }
 
-/* ---------------------------------------------- */
-
-.content-two{
-  width: 896px;
-  background-color: #DBE2FC;
-  border:1px solid #754DE5;
-  border-radius: 4px;
-  display:flex;
-  justify-content: space-around;
-  margin: 0 auto;
-  margin-top: 5px;
+.content-two :first-child{
+  margin-left: 21px;
 }
 
-.content-two-unit-one{
-  padding: 37px 128px 37px 128px;
-  background-color: #E7E0FF;
-  border:1px solid #EF33FF;
-  border-radius: 4px;
-  margin-left: 28px;
+.content-two :last-child{
+  margin-right: 21px;
 }
-
-.content-two-unit-two{
-  padding: 37px 128px 37px 128px;
-  background-color: #E7E0FF;
-  border:1px solid #EF33FF;
-  border-radius: 4px;
-  margin-left: 12px;
-  margin-right: 12px;
-}
-
-.content-two-unit-thre{
-  padding: 37px 128px 37px 128px;
-  background-color: #E7E0FF;
-  border:1px solid #EF33FF;
-  border-radius: 4px;
-  margin-right: 28px;
-}
-
-/* ---------------------------------------------- */
 
 .content-thre{
-  width: 896px;
-  height: 140px;
-  background-color: #DBE2FC;
-  border:1px solid #754DE5;
-  border-radius: 4px;
-  display:flex;
-  align-items:center;
-  flex-wrap: wrap;
-  margin: 0 auto;
-  margin-top: 5px;
-  margin-bottom: 8px;
+
 }
 
-.content-thre-unit-one{
+/*---------- Мелькие элементы блоков content ----------*/
+
+.content-two-unit{
+  display: flex;
   background-color: #E7E0FF;
   border:1px solid #EF33FF;
   border-radius: 4px;
-  margin: 0 auto;
-  margin-top: 10px;
-  padding: 17px 197px 17px 197px;
+  flex-basis: 262px;
+  height:98px;
+
+  margin: 0;
+  justify-content: center;
+  align-items: center;
 }
 
-.content-thre-unit-two{
+.content-thre-unit{
   background-color: #E7E0FF;
   border:1px solid #EF33FF;
   border-radius: 4px;
-  margin: 0 auto;
-  margin-top: 10px;
-  padding: 17px 197px 17px 197px;
-}
 
-.content-thre-unit-thre{
-  background-color: #E7E0FF;
-  border:1px solid #EF33FF;
-  border-radius: 4px;
-  margin: 0 auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  padding: 17px 197px 17px 197px;
-}
-
-.content-thre-unit-fore{
-  background-color: #E7E0FF;
-  border:1px solid #EF33FF;
-  border-radius: 4px;
-  margin: 0 auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  padding: 17px 197px 17px 197px;
+  margin: 0;
 }
 
 /* ---------------------------------------------- */
 
 .page-footer{
-  width:960px;
+  /* width:960px; */
   background-color: #E6F3FF;
   border:1px solid #0183FF;
   border-radius: 4px;
