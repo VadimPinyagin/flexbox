@@ -2,7 +2,6 @@ html{
   background-color: #f2f2f2;
 }
 
-
 body{
   display: flex;
   width: 1200px;
@@ -100,20 +99,13 @@ body{
   align-items: center;
 }
 
-.content-one{
-
-}
-
-.content-two :first-child{
-  margin-left: 21px;
-}
-
-.content-two :last-child{
-  margin-right: 21px;
-}
-
 .content-thre{
-
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 10px;
+  column-gap: 20px;
+  padding-top: 9px;
+  padding-bottom: 9px;
 }
 
 /*---------- Мелькие элементы блоков content ----------*/
@@ -131,11 +123,25 @@ body{
   align-items: center;
 }
 
+.content-two :first-child{
+  margin-left: 21px;
+}
+
+.content-two :last-child{
+  margin-right: 21px;
+}
+
 .content-thre-unit{
+  display: flex;
+  flex-basis: 404px;
+  justify-content: center;
+  align-items: center;
+
   background-color: #E7E0FF;
   border:1px solid #EF33FF;
   border-radius: 4px;
 
+  height: 53px;
   margin: 0;
 }
 
@@ -147,19 +153,16 @@ body{
   border:1px solid #0183FF;
   border-radius: 4px;
   display:flex;
-  justify-content: space-around;
-  margin: 0 auto;
-  /* margin-top: 5px; */
 }
 
-.logo-footer{
+/* .logo-footer{
   width: 155px;
   height: 35px;
   background-color: #E7E0FF;
   border:1px solid #EF33FF;
   border-radius: 4px;
   margin: 10px 10px 10px 0;
-}
+} */
 
 .page-footer-content-one{
   width:224px;
